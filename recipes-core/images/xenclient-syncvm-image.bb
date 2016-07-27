@@ -1,6 +1,6 @@
 # XenClient Synchronizer client VM image
 
-include xenclient-image-common.inc
+include recipes-core/images/xenclient-image-common.inc
 IMAGE_FEATURES += "package-management"
 
 COMPATIBLE_MACHINE = "(xenclient-syncvm)"
@@ -59,7 +59,7 @@ inherit image
 inherit xenclient-image-src-info
 inherit xenclient-image-src-package
 inherit xenclient-licences
-require xenclient-version.inc
+require recipes-core/images/xenclient-version.inc
 
 LICENSE = "GPLv2 & MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-2.0;md5=801f80980d171dd6425610833a22dbe6      \
